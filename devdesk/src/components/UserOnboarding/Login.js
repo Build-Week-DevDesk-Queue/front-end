@@ -47,48 +47,44 @@ const Login = (props) => {
         //     ),
         userType: yup.string().required("Please choose a user type."),
     });
-
+    
     return (
-        <>
-            <div className="login-form">
-                <Formik
-                    initialValues={loginValues}
-                    onSubmit={onSubmit}
-                    validationSchema={validationSchema}
-                    render={props => {
-                        return (
-                            <Form>
-                                <div className="form-title">
-                                    <h2>Login</h2>
-                                </div>
-                                <div className="field">
-                                    <Field name="username" type="text" placeholder=" Username" />
-                                    <ErrorMessage name="username" component="p" />
-                                </div>
-                                <div className="field">
-                                    <Field name="password" type="password" placeholder=" Password" />
-                                    <ErrorMessage name="password" component="p" />
-                                </div>
-                                <div className="field">
-                                    <div className="radio">
-                                        <span>Student</span>
-                                        <Field name="userType" type="radio" value="student" />
-                                    </div>
-                                    <div className="radio">
-                                        <span>Helper</span>
-                                        <Field name="userType" type="radio" value="helper" />
-                                    </div>
-                                    <ErrorMessage name="userType" component="p" />
-                                </div>
-                                <div className="submit-button">
-                                    <button type="submit">Login</button>
-                                </div>
-                            </Form>
-                        )
-                    }}
-                />
-            </div>
-        </>
+        <Formik
+            initialValues={loginValues}
+            onSubmit={onSubmit}
+            validationSchema={validationSchema}
+            render={props => {
+                return (
+                    <Form>
+                        <div className="form-title">
+                            <h2>Login</h2>
+                        </div>
+                        <div className="field">
+                            <Field name="username" type="text" placeholder=" Username" />
+                            <ErrorMessage name="username" component="p" />
+                        </div>
+                        <div className="field">
+                            <Field name="password" type="password" placeholder=" Password" />
+                            <ErrorMessage name="password" component="p" />
+                        </div>
+                        <div className="field">
+                            <div className="radio">
+                                <span>Student</span>
+                                <Field name="userType" type="radio" value="student" />
+                            </div>
+                            <div className="radio">
+                                <span>Helper</span>
+                                <Field name="userType" type="radio" value="helper" />
+                            </div>
+                            <ErrorMessage name="userType" component="p" />
+                        </div>
+                        <div className="submit-button">
+                            <button type="submit">Login</button>
+                        </div>
+                    </Form>
+                )
+            }}
+        />
     )
 }
 

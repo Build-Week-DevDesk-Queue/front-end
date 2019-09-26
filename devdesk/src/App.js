@@ -11,6 +11,7 @@ import HelperDashboard from "./components/Helper/HelperDashboard";
 import AddTicket from './components/Student/AddTicket';
 import DynamicTicket from './components/Ticket/DynamicTicket';
 import AnswerTicket from './components/Helper/AnswerTicket';
+import MyTickets from "./components/Student/MyTickets";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <PrivateRoute path="/student-dashboard/" component={StudentDashboard} />
       <PrivateRoute path="/helper-dashboard/" component={HelperDashboard} />
       <PrivateRoute path="/add-ticket" component={AddTicket} />
+      <PrivateRoute path="/my-tickets/" component={MyTickets} />
       <PrivateRoute path='/ticket/:id' component={DynamicTicket} />
       <PrivateRoute path='/answer-ticket/:id' component={AnswerTicket} />
     </div>

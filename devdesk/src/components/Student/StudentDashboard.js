@@ -13,6 +13,7 @@ const StudentDashboard = (props) => {
         <div className='dashboard'>
             <h2>Student Dashboard</h2>
             <Link to='/add-ticket'>Add Ticket</Link>
+            <Link to='/my-tickets/'>My Tickets</Link>
             <TicketList />
         </div>
     )
