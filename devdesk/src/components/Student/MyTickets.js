@@ -18,7 +18,7 @@ export default function MyTickets(props) {
     return (
         <div className="myTickets">
             {/* {myTickets.map(ticket => (
-                <TicketCard/>
+                
             ))} */}
         </div>
     )
