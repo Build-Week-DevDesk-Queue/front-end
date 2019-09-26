@@ -27,13 +27,20 @@
 }
 
 .ticket-link {
+  text-decoration:none;
+  color: black;
+}
+
+.ticket-card  {
   width:23%;
   margin:1%;
   padding:1%;
   background:white;
   color:black;
+
   text-decoration:none;
   background-image: url("components/images/geometric.jpg");
+
 }
 
 .ticket-card {
@@ -50,7 +57,6 @@
 }
 .ticket-card p {
  margin:4%;
- 
 }
 
 /* Form Styles  DASHBOARD  */
