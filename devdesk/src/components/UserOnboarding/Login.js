@@ -38,8 +38,6 @@ const Login = (props) => {
     });
 
     return (
-        <>
-            <Link to="/">Homepage</Link>
             <div className="login-form">
                 <Formik
                     initialValues={loginValues}
@@ -78,7 +76,6 @@ const Login = (props) => {
                     }}
                 />
             </div>
-        </>
     )
 }
 
